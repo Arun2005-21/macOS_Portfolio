@@ -1,5 +1,5 @@
-import { Type, Weight } from "lucide-react"
-import { Container } from "postcss"
+// import { Type, Weight } from "lucide-react"
+// import { Container } from "postcss"
 import {  useRef } from "react"
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -25,7 +25,7 @@ const renderText = (text, className, baseWeight = 400) => {
 }
 
 const setupTextHover = (container, type) => {
-    if (!container) return;
+    if (!container) return () => {};
 
     const letters = container.querySelectorAll("span");
     const {min, max, default:base} = FONT_WEIGHTS[type];
@@ -80,8 +80,8 @@ const Welcome = () => {
         const subtitleCleanup = setupTextHover(subtitleRef.current, "subtitle");     
         
         return () => {
-            subtitleCleanup();
-            titleCleanup();
+            subtitleCleanup?.();
+            titleCleanup?.();
         };
     }, []);
     
@@ -99,7 +99,7 @@ const Welcome = () => {
     </h1>
 
     <div className="small-screen">
-        <p>Thsi Portfolio is designed for desktop/tabled screens only..</p>
+        <p>This portfolio is designed for desktop/tablet screens only.</p>
     </div>
   </section>
   
