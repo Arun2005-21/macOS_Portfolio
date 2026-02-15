@@ -50,4 +50,9 @@ export default defineConfig({
       "#windows": resolve(root, "src/windows"),
     },
   },
+  test: {
+    globals: true,
+    environment: "jsdom",
+    setupFiles: "./src/test/setup.js",
+  },
 });
