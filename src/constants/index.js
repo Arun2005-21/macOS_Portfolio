@@ -38,37 +38,37 @@ const navIcons = [
 const dockApps = [
   {
     id: "finder",
-    name: "Portfolio", // was "Finder"
+    name: "Portfolio",
     icon: "finder.png",
     canOpen: true,
   },
   {
     id: "safari",
-    name: "Articles", // was "Safari"
+    name: "Articles",
     icon: "safari.png",
     canOpen: true,
   },
   {
     id: "photos",
-    name: "Gallery", // was "Photos"
+    name: "Gallery",
     icon: "photos.png",
     canOpen: true,
   },
   {
     id: "contact",
-    name: "Contact", // or "Get in touch"
+    name: "Contact",
     icon: "contact.png",
     canOpen: true,
   },
   {
     id: "terminal",
-    name: "Skills", // was "Terminal"
+    name: "Skills",
     icon: "terminal.png",
     canOpen: true,
   },
   {
     id: "trash",
-    name: "Archive", // was "Trash"
+    name: "Archive",
     icon: "trash.png",
     canOpen: false,
   },
@@ -77,83 +77,69 @@ const dockApps = [
 const blogPosts = [
   {
     id: 1,
-    date: "Sep 2, 2025",
+    date: "Feb 2026",
     title:
-      "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
+      "How I Built a Full-Stack Airbnb Clone using Node.js, Express & MongoDB",
     image: "/images/blog1.png",
-    link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
-  },
-  {
-    id: 2,
-    date: "Aug 28, 2025",
-    title: "The Ultimate Guide to Mastering Three.js for 3D Development",
-    image: "/images/blog2.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
-  },
-  {
-    id: 3,
-    date: "Aug 15, 2025",
-    title: "The Ultimate Guide to Mastering GSAP Animations",
-    image: "/images/blog3.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+    link: "https://www.linkedin.com/posts/arun-mn-259773326_excited-to-share-my-latest-full-stack-activity-7344320460517478400-hGxe",
   },
 ];
 
 const techStack = [
   {
+    category: "Languages",
+    items: ["Java", "JavaScript"],
+  },
+  {
     category: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript"],
-  },
-  {
-    category: "Mobile",
-    items: ["React Native", "Expo"],
-  },
-  {
-    category: "Styling",
-    items: ["Tailwind CSS", "Sass", "CSS"],
+    items: ["HTML", "CSS", "React", "Bootstrap", "Material UI"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "NestJS", "Hono"],
+    items: ["Node.js", "Express.js", "EJS", "EJS-mate"],
   },
   {
     category: "Database",
-    items: ["MongoDB", "PostgreSQL"],
+    items: ["MongoDB", "SQL"],
   },
   {
-    category: "Dev Tools",
-    items: ["Git", "GitHub", "Docker"],
+    category: "GenAI",
+    items: ["LLMs", "RAG", "LangChain"],
+  },
+  {
+    category: "Tools",
+    items: ["Git", "GitHub", "VS Code", "IntelliJ IDEA"],
   },
 ];
 
 const socials = [
   {
     id: 1,
-    text: "Github",
+    text: "GitHub",
     icon: "/icons/github.svg",
     bg: "#f4656b",
-    link: "https://github.com/JavaScript-Mastery-Pro",
+    link: "https://github.com/Arun2005-21",
   },
   {
     id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
-    bg: "#4bcb63",
-    link: "https://jsmastery.com/",
+    text: "LeetCode",
+    icon: "/icons/download.svg",
+    bg: "#4ADE80",
+    link: "https://leetcode.com/u/vQWVqUGN56/",
   },
   {
     id: 3,
-    text: "Twitter/X",
-    icon: "/icons/twitter.svg",
-    bg: "#ff866b",
-    link: "https://x.com/jsmasterypro",
+    text: "Instagram",
+    icon: "/icons/instagram.svg",
+    bg: "#DD2A7B",
+    link: "https://share.google/tXZsOUrntfDJTMYTx",
   },
   {
     id: 4,
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
     bg: "#05b6f6",
-    link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+    link: "https://www.linkedin.com/in/arun-mn-259773326/",
   },
 ];
 
@@ -188,19 +174,19 @@ const photosLinks = [
 const gallery = [
   {
     id: 1,
-    img: "/images/gal1.png",
+    img: "/images/gal2.jpg",
   },
   {
     id: 2,
-    img: "/images/gal2.png",
+    img: "/images/gal1.jpeg",
   },
   {
     id: 3,
-    img: "/images/gal3.png",
+    img: "/images/gal3.jpg",
   },
   {
     id: 4,
-    img: "/images/gal4.png",
+    img: "/images/gal4.jpg",
   },
 ];
 
@@ -225,38 +211,38 @@ const WORK_LOCATION = {
     // ▶ Project 1
     {
       id: 5,
-      name: "Nike Ecommerce Website Application",
+      name: "Full-Stack Listing & Travel Platform",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-5", // icon position inside Finder
-      windowPosition: "top-[5vh] left-5", // optional: Finder window position
+      position: "top-10 left-5",
+      windowPosition: "top-[5vh] left-5",
       children: [
         {
           id: 1,
-          name: "Nike Project.txt",
+          name: "Project Overview.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+            "A full-stack listing and travel platform inspired by Airbnb, built to strengthen real-world full-stack development skills.",
+            "This project includes authentication, CRUD operations, category-based filtering, and map-based geolocation features.",
+            "It follows MVC architecture and RESTful routing, keeping the code clean, scalable, and maintainable.",
+            "Built using Node.js, Express.js, MongoDB, EJS, and modern full-stack development practices.",
           ],
         },
         {
           id: 2,
-          name: "nike.com",
+          name: "Live Demo.url",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+          href: "https://lnkd.in/gMccEK6u",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "nike.png",
+          name: "Project Preview.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
@@ -265,11 +251,11 @@ const WORK_LOCATION = {
         },
         {
           id: 5,
-          name: "Design.fig",
+          name: "GitHub Repo.url",
           icon: "/images/plain.png",
           kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
+          fileType: "url",
+          href: "https://github.com/Arun2005-21/delta-demo",
           position: "top-60 right-20",
         },
       ],
@@ -278,38 +264,40 @@ const WORK_LOCATION = {
     // ▶ Project 2
     {
       id: 6,
-      name: "AI Resume Analyzer",
+      name: "AI Career & Education Advisor",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-52 right-80",
+      position: "top-52 left-5",
       windowPosition: "top-[20vh] left-7",
       children: [
         {
           id: 1,
-          name: "AI Resume Analyzer Project.txt",
+          name: "AI Career Advisor Project.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 right-10",
           description: [
-            "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-            "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-            "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-            "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
+            "AI-Based Personalized Career and Education Advisor helps students choose the right stream or degree after Class 10 or 12.",
+            "It collects student academic level, interests, and financial background to generate personalized recommendations.",
+            "It recommends suitable streams (Arts, Science, Commerce, Vocational) and degree programs in nearby government colleges.",
+            "It includes aptitude quiz and video interview modules to evaluate logical reasoning and communication skills.",
+            "It also supports WhatsApp and phone-call guidance for rural and low-connectivity users.",
+            "Built using React.js, Node.js, Express.js, and MongoDB with custom student survey and aptitude test data.",
           ],
         },
         {
           id: 2,
-          name: "ai-resume-analyzer.com",
+          name: "Live Demo.url",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+          href: "https://one-stop-personalize-zeqy.bolt.host/roadmap",
           position: "top-20 left-20",
         },
         {
           id: 4,
-          name: "ai-resume-analyzer.png",
+          name: "career-advisor.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
@@ -318,11 +306,11 @@ const WORK_LOCATION = {
         },
         {
           id: 5,
-          name: "Design.fig",
+          name: "GitHub Repo.url",
           icon: "/images/plain.png",
           kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
+          fileType: "url",
+          href: "https://github.com/Arun2005-21",
           position: "top-60 left-5",
         },
       ],
@@ -345,15 +333,15 @@ const WORK_LOCATION = {
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-            "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-            "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-            "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+            "A Food Delivery App built to provide a smooth ordering experience with a clean and modern mobile UI.",
+            "Users can browse restaurants, explore menus, place orders, and track delivery updates in real time.",
+            "Designed with a focus on mobile-first experience and responsive UI patterns.",
+            "Built using React Native for cross-platform performance on Android and iOS.",
           ],
         },
         {
           id: 2,
-          name: "food-delivery-app.com",
+          name: "Demo.url",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
@@ -371,11 +359,11 @@ const WORK_LOCATION = {
         },
         {
           id: 5,
-          name: "Design.fig",
+          name: "GitHub Repo.url",
           icon: "/images/plain.png",
           kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
+          fileType: "url",
+          href: "https://github.com/Arun2005-21",
           position: "top-60 right-20",
         },
       ],
@@ -391,31 +379,13 @@ const ABOUT_LOCATION = {
   kind: "folder",
   children: [
     {
-      id: 1,
-      name: "me.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-10 left-5",
-      imageUrl: "/images/adrian.jpg",
-    },
-    {
       id: 2,
       name: "casual-me.png",
       icon: "/images/image.png",
       kind: "file",
       fileType: "img",
       position: "top-28 right-72",
-      imageUrl: "/images/adrian-2.jpg",
-    },
-    {
-      id: 3,
-      name: "conference-me.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-52 left-80",
-      imageUrl: "/images/adrian-3.jpeg",
+      imageUrl: "/images/adrian12.jpeg",
     },
     {
       id: 4,
@@ -425,12 +395,12 @@ const ABOUT_LOCATION = {
       fileType: "txt",
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
-      image: "/images/adrian.jpg",
+      image: "/images/adrian12.jpeg",
       description: [
-        "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-        "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-        "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-        "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+        "Hey! I’m Arun 👋, a MERN Stack Developer who loves building real-world web applications with clean UI and scalable code.",
+        "I specialize in React.js, Node.js, Express.js, and MongoDB, and I enjoy creating responsive full-stack projects from frontend to backend.",
+        "I’m also exploring MERN + AI projects using LLMs, RAG, and LangChain to build smarter and more helpful applications.",
+        "I’ve worked as a Google Gemini Student Ambassador and a Frontend Web Development Intern, and I’ve participated in 10+ hackathons—always focused on learning, building, and improving.",
       ],
     },
   ],
@@ -449,8 +419,6 @@ const RESUME_LOCATION = {
       icon: "/images/pdf.png",
       kind: "file",
       fileType: "pdf",
-      // you can add `href` if you want to open a hosted resume
-      // href: "/your/resume/path.pdf",
     },
   ],
 };
@@ -470,15 +438,6 @@ const TRASH_LOCATION = {
       fileType: "img",
       position: "top-10 left-10",
       imageUrl: "/images/trash-1.png",
-    },
-    {
-      id: 2,
-      name: "trash2.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-40 left-80",
-      imageUrl: "/images/trash-2.png",
     },
   ],
 };

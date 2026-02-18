@@ -15,16 +15,15 @@ const Contact = () => {
 
       <div className="p-5 space-y-5">
         <img
-          src="/images/adrian.jpg"
-          alt="Adrian"
+          src="/images/IMG_20230827_151005_126.jpg"
+          alt="Arun"
           className="w-20 rounded-full"
         />
 
         <div className="space-y-2">
           <h3 className="text-lg font-semibold">Let's Connect</h3>
           <p className="text-sm text-gray-600">
-            Got an idea? A bug to squash? Or just wanna talk tech? I'm in.
-          </p>
+               Got an idea or want to build something cool in MERN + AI? I’m in.          </p>
           <a
   href="https://mail.google.com/mail/?view=cm&fs=1&to=arun.cpp21@gmail.com&su=Hello%20Arun&body=Hi%20Arun,%20I%20saw%20your%20portfolio!"
   target="_blank"
